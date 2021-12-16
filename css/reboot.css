@@ -3,3 +3,12 @@
   background-color: #164a97;
   border-color: #164a97;
 }
+.btn-techs {
+  color: #fff;
+  background-color: #ff3e00;
+  border-color: #ff3e00;
+}
+.btn-techs:hover{
+  color: #ff3e00;
+  background-color: #fff;
+}
