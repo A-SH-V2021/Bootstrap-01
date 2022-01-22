@@ -36,17 +36,60 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#Features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="#Blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Our Team">Our Team</a>
             </li>
           </ul>
           <form class="d-flex">
-            <button class="btn btn-primary" type="submit">Get started</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#GetStartedModal"
+            >
+              Get Started
+            </button>
           </form>
         </div>
       </nav>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="GetStartedModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"><p class="m-0">This is test</p></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
     <header class="my-4">
       <section class="container">
@@ -59,7 +102,14 @@
               voluptate illum aspernatur harum fugit omnis tempore eius.
               Voluptatum fuga exercitationem inventore deleniti!
             </p>
-            <a href="#" class="btn btn-primary">Get started</a>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#GetStartedModal"
+            >
+              Get Started
+            </button>
           </div>
           <div class="col-md-6">
             <img
@@ -72,7 +122,7 @@
       </section>
     </header>
     <!-- features --------------------------------->
-    <div class="py-1">
+    <div class="py-1" id="Features">
       <div class="container">
         <div class="row bg-light">
           <h2 class="text-center mt-4">Features</h2>
@@ -345,7 +395,7 @@
     </div>
     <!--End techs React --------------------------------->
     <!--Start of posts --------------------------------->
-    <div class="py-4 bg-light">
+    <div class="py-4 bg-light" id="Blog">
       <main class="container">
         <h3 class="text-center text-uppercase">recent posts from our blog</h3>
         <p class="py-4 px-3 lead text-muted">
@@ -393,7 +443,7 @@
     </div>
     <!--End of posts --------------------------------->
     <!--Start Our Team --------------------------------->
-    <div class="py-4">
+    <div class="py-4" id="Our Team">
       <main class="container">
         <h2 class="text-center mb-4">Our team</h2>
         <p class="text-center py-2 text-muted">
@@ -999,11 +1049,40 @@
       </div>
     </div>
     <!--end of contact --------------------------------->
+    <!-- Top Arrow -->
+
+    <a
+      href="#"
+      class="bg-dark text-warning d-flex position-fixed  rounded-circle"
+      style="
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        right: 2rem;
+        bottom: 5rem;
+        opacity: 0.7;
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-arrow-up"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
+        />
+      </svg>
+    </a>
     <!--Start of  footer--------------------------------->
     <footer class="bg-dark text-light py-3">
       <div class="container py-3">
         <div class="row">
-          <div class="col-md-3 ">
+          <div class="col-md-3">
             <h2>Web Developer</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -1013,25 +1092,65 @@
           <div class="col-md-3 ps-5">
             <h3 class="border-start border-2 ps-3 border-info">Pages</h3>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-decoration-none " style="color: #ddd">React.js</a></li>
-              <li><a href="#" class="text-decoration-none " style="color: #ddd">Vue.js</a></li>
-              <li><a href="#" class="text-decoration-none " style="color: #ddd">Angular.js</a></li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #ddd"
+                  >React.js</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #ddd"
+                  >Vue.js</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #ddd"
+                  >Angular.js</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-md-3 ps-5">
             <h3 class="border-start border-2 ps-3 border-info">More</h3>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-decoration-none " style="color: #ddd">React.js</a></li>
-              <li><a href="#" class="text-decoration-none " style="color: #ddd">Vue.js</a></li>
-              <li><a href="#" class="text-decoration-none " style="color: #ddd">Angular.js</a></li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #ddd"
+                  >React.js</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #ddd"
+                  >Vue.js</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #ddd"
+                  >Angular.js</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-md-3 ps-5">
             <h3 class="border-start border-2 ps-3 border-info">Posts</h3>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-decoration-none"  style="color: #ddd"style="color: #ddd">React.js</a></li>
-              <li><a href="#" class="text-decoration-none " style="color: #ddd">Vue.js</a></li>
-              <li><a href="#" class="text-decoration-none " style="color: #ddd">Angular.js</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  style="color: #ddd"
+                  style="color: #ddd"
+                  >React.js</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #ddd"
+                  >Vue.js</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #ddd"
+                  >Angular.js</a
+                >
+              </li>
             </ul>
           </div>
         </div>
